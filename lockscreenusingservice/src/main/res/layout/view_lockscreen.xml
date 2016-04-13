@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pin_number"
+        android:textColor="#FFFFFF"
+        android:inputType="number"
+        android:maxLength="6"
+        android:hint="PIN"
+        android:textColorHint="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/unlockButton"
+        android:layout_toStartOf="@+id/unlockButton"
+        android:password="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Unlock"
+        android:id="@+id/unlockButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/pin_number" />
+
+    <ImageButton
+        android:layout_width="220dip"
+        android:layout_height="220dip"
+        android:id="@+id/imageButton"
+        android:background="@drawable/mainlock"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_width="310dip"
+        android:layout_height="310dip"
+        android:id="@+id/lockedge"
+        android:background="@drawable/lockedge"
+        android:layout_centerInParent="true"/>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="160dip"
+        android:id="@+id/seekBar1"
+        android:max="40"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@android:color/transparent"
+        android:progress="20"
+        />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="160dip"
+        android:id="@+id/seekBar2"
+        android:max="40"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:progress="40"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@android:color/transparent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="320dip"
+        android:id="@+id/imageView1"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/pin"
+        android:layout_centerInParent="true"
+        android:rotation="45" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="320dip"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/screwdriver"
+        android:layout_centerInParent="true"  />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/mini_pin1"
+        android:background="@drawable/mini_pin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/seekBar2"
+        android:layout_alignEnd="@+id/seekBar2" />
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/mini_pin2"
+        android:background="@drawable/mini_pin"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/mini_pin1"
+        android:layout_toStartOf="@+id/mini_pin1" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/mini_pin3"
+        android:background="@drawable/mini_pin"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/mini_pin2"
+        android:layout_toStartOf="@+id/mini_pin2" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/mini_pin4"
+        android:background="@drawable/mini_pin"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/mini_pin3"
+        android:layout_toStartOf="@+id/mini_pin3" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/mini_pin5"
+        android:background="@drawable/mini_pin"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/mini_pin4"
+        android:layout_toStartOf="@+id/mini_pin4" />
+
+</RelativeLayout>
